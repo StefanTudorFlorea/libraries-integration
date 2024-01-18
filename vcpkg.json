@@ -5,6 +5,6 @@
       "doctest",
       "fmt",
       "stduuid",
-      "stduuid"
+      "redis-plus-plus"
     ]
 }

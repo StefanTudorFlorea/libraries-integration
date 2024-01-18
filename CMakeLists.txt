@@ -7,12 +7,13 @@ project(libraries-integration)
 find_package(doctest  CONFIG REQUIRED)
 find_package(fmt      CONFIG REQUIRED)
 find_package(stduuid  CONFIG REQUIRED)
+find_package(redis++  CONFIG REQUIRED)
 
 # examples
 add_executable(tests 
     src/doctest.cpp
     src/fmt.cpp
-    src/uuid.cpp
+    src/stduuid.cpp
 )
 
 target_link_libraries(tests 
@@ -20,4 +21,5 @@ target_link_libraries(tests
         doctest::doctest
         stduuid
         fmt::fmt
+        redis++::redis++_static
 )
